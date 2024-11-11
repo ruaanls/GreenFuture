@@ -18,7 +18,7 @@
       }
 
       .header {
-      @apply flex justify-between items-center m-0 py-[1.5%] px-[2%] sticky top-0 bg-[#001B74] text-white;
+      @apply flex justify-between text-black items-center m-0 py-[1.5%] px-[2%] sticky top-0 bg-[#EBEBEB] ;
 
       & .img {
           @apply w-[50%] h-[20%];
@@ -40,7 +40,7 @@
         }
 
       & .botao {
-          @apply bg-[#0065FC] py-[3%] px-[4%] rounded-[10px] text-white cursor-pointer;
+          @apply bg-[#172EC3] py-[3%] px-[4%] rounded-[10px] text-white cursor-pointer;
           }
       }
   }
@@ -216,27 +216,88 @@
     
         & .botao-home {
             @apply rounded-[12px] bg-[#001B74] py-[15px] px-[25px] text-white cursor-pointer  flex items-center;
+            h2
+            {
+                @apply text-[1.8rem]
+            }
         & h1 {
             @apply mb-0;
             }
         }
 
+
     }
 
     .container-sobre
     {
-        @apply flex justify-between px-[5%] py-[3%]
+        @apply flex justify-center gap-1 px-[5%] py-[3%] text-center;
     }
 
     .energias-container
     {
-        @apply flex justify-between px-[5%] py-[3%];
+        @apply flex justify-between px-[5%] py-[3%] text-white;
         & .card-energias
         {
-            @apply bg-blue-600 p-[3%] rounded-[12px];
+            @apply bg-blue-600 px-[3%] py-[1.5%] rounded-[12px] w-[25%] text-white;
             h1
             {
-                @apply text-[2rem]
+                @apply text-[5rem] mb-[2rem] ;
+            }
+            h2
+            {
+                @apply text-[2rem] mb-[2rem] pb-[1.5rem] border-b-2;
+            }
+        }
+    }
+
+    .carbono-container
+    {
+        @apply  px-[3%] py-[1.5%]  bg-[#0e5523] text-white;
+        .txt-carbono
+        {
+            @apply flex justify-between gap-10;
+            .detalhes-carbono
+            {
+                @apply w-[40%] mr-[15%] mt-[2.5rem];
+                button
+                {
+                    @apply bg-white p-[2%] rounded-[50px] mt-[2rem] text-black
+                }
+            }
+        }
+        h1
+        {
+            @apply text-[4rem] ;
+        }
+
+        p
+        {
+            @apply text-[1.5rem] mt-[2rem];
+        }
+        
+    }
+
+    .areas-container-geral
+    {
+        @apply py-[2.5%] px-[5%] bg-[#EBEBEB];
+        .container-areas
+        {
+            @apply flex justify-between mt-[2rem];
+            h1
+            {
+                @apply text-[3rem]
+            }
+            .card-areas
+            {
+                @apply w-[30%];
+                .img-card
+                {
+                    @apply w-[100%]
+                }
+                .txt-card-areas
+                {
+                    @apply p-[10%]  bg-white
+                }
             }
         }
     }
